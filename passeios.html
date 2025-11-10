@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Nossos Passeios - Soterô Turismo</title><style>
+:root{
+  --navy:#0b3b4a;
+  --dende:#ff9f1c;
+  --sun:#ffd34d;
+  --sea:#15aabf;
+  --cream:#fff7ee;
+  --muted:#5a6a6f;
+  --card:#ffffff;
+  --shadow: rgba(11,59,74,0.08);
+  font-family: "Inter", "Segoe UI", Roboto, Arial, sans-serif;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--cream);color:var(--navy);line-height:1.5}
+header{background:linear-gradient(90deg,var(--navy),#0f5b6a);color:white;padding:14px 20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{height:56px}
+nav a{color:white;text-decoration:none;margin-left:18px;font-weight:700}
+.container{max-width:1100px;margin:0 auto;padding:24px}
+.hero{position:relative;color:white}
+.hero .overlay{background:linear-gradient(180deg,rgba(11,59,74,0.45),rgba(11,59,74,0.45));padding:36px;border-radius:8px;max-width:720px}
+.card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px var(--shadow)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.tours .card img,.team-card img{width:100%;height:180px;object-fit:cover;border-radius:8px}
+.hero-cta{display:inline-block;background:var(--dende);color:var(--navy);padding:12px 16px;border-radius:8px;font-weight:800;text-decoration:none}
+footer{background:#092b33;color:#dbecef;padding:30px 20px;text-align:center;margin-top:30px}
+.form input, .form select, .form textarea{width:100%;padding:10px;border:1px solid #e6e6e6;border-radius:8px;margin-top:8px;font-size:14px}
+.form button{background:var(--dende);border:none;padding:10px 14px;border-radius:8px;color:var(--navy);font-weight:800;cursor:pointer;margin-top:10px}
+@media(max-width:880px){.hero .overlay{padding:18px} .brand img{height:48px}}
+</style></head>
+<body>
+<header>
+  <div class="brand">
+    <img src="assets/logo.png" alt="Soterô Turismo" />
+    <div style="line-height:1"><div style="font-weight:900;font-size:18px">SOTERÔ TURISMO</div><div style="font-size:12px;color:#ddecf2">Onde o sol revela o lado mais verdadeiro de Salvador</div></div>
+  </div>
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="passeios.html">Nossos Passeios</a>
+    <a href="galeria.html">Galeria</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+</header>
+<main class="container">
+  <h1>Nossos Passeios</h1>
+  <div class="grid">
+    <div class="card"><img src="assets/tour_pelourinho.png" alt="Pelourinho"/><h3>Tour Histórico • Pelourinho e Cidade Alta</h3><p class="muted">Duração: 3h • Preço médio: R$ 120<br/><strong>Inclui:</strong> guia bilíngue, degustação.</p></div>
+    <div class="card"><img src="assets/tour_gastronomico.png" alt="Gastronomia"/><h3>Tour Gastronômico • Sabores da Bahia</h3><p class="muted">Duração: 4h • Preço médio: R$ 180<br/><strong>Inclui:</strong> degustações com chef local.</p></div>
+    <div class="card"><img src="assets/tour_por_do_sol.png" alt="Pôr do Sol"/><h3>Tour Pôr do Sol • Farol da Barra</h3><p class="muted">Duração: 3h • Preço médio: R$ 150<br/><strong>Inclui:</strong> guia e opcional transporte.</p></div>
+    <div class="card"><img src="assets/tour_cultural.png" alt="Cultura"/><h3>Tour Cultural • Música e Axé</h3><p class="muted">Duração: 3-5h • Preço médio: R$ 200<br/><strong>Inclui:</strong> oficina musical.</p></div>
+  </div>
+</main>
+<footer>
+  © 2025 Soterô Turismo — Pelourinho, Salvador • <strong>Viva o brilho de Salvador</strong>
+</footer>
+</body>
+</html>
